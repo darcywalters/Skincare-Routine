@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.50/dist/shoelace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />    
+    <title>The Skincare Routine</title>
+    
+
+</head>
+<body>
+    
+    <header class="topbar">
+        <sl-icon-button name="list" class="hamburger-btn"></sl-icon-button>
+        <nav class="primary-menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skin Types</a>
+          <a href="#">Skin Steps</a>
+          <a href="#">Products</a>
+          <a href="#">How To</a>
+        </nav>
+    </header>
+
+    <div class="section s1">
+        <div class="box">
+        <div class="title">
+            <h1>The Skincare Routine</h1>
+        </div>
+        </div>
+        <div class="main-image">
+            <img src="images/main-image.png" alt="main-image">
+        </div>
+    </div>
+    
+   
+
+    <div class="section s2">
+        <div class="s2-title">
+            <h1>About</h1></div>
+            <div class="box2">
+                <p class="about-top">Welcome to Your Skin, the website that combines all the skincare information you need in one spot. Finding out what skin type you have and how to treat that can be very hard when there are so many different websites that say contrasting things, or websites that don’t have all the information you need. Your Skin lets you know about skin types, what the best skincare routine is and about the products you are putting on your face. There is also a video tutorial that demonstrates how the products work. </p>
+                <div class="about-image">
+                    <img src="images/about.png" alt="about-image">
+                </div>
+            </div>
+          </div>  
+
+    <div class="section s3">
+        <div class="s3-title">
+          <h1>Skin Types</h1></div>
+            <div class="column">
+              <div class="flip-card">
+              <div class="flip-card-inner">
+              <div class="flip-card-front">
+              <img src="images/dry-skin.png" alt="dry-skin" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Dry Skin</h1>
+                <p>People with dry skin experience very dry patches on their face, as they require more moistures than most and a gentle face wash. Dry skin can also cause irritation to the persons face. The most common factors that people have are:</p>
+                <p>No pores, red patches, dry flaky skin and visible lines.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/combo-skin.png" alt="combo-skin" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Combination Skin</h1>
+                    <p>Combinations skin, also known as oily and dry skin usually a person’s face will be dry except for the T-zone when is the nose, space in-between the eyebrows and next to the nostrils. The most common factors are: </p>
+                    <p>Larger pores, shiny skin, blackheads and dry patches</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/oily-skin.png" alt="oily-skin" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Oily Skin</h1>
+                    <p>Oily skin os something very common, people expense shiny skin and usually need less oils such as moisturisers. The common factors of people who have only skin are:</p>
+                    <p>Large Pores,  Blemishes such as blackheads and pimples,  Oily/shiny Skin</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                  <img src="images/normal-skin.png" alt="normal-skin" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Normal Skin</h1>
+                    <p>Normal skin is very rare for teenagers, however people can develop a normal skin type overtime. These people require less products but still a consistent routine. The most common factors that people with normal skin experience are:</p>
+                    <p>Very few imperfections, small pores, overall clear skin.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+    
+      </div>  
+
+    <div class="section s4">
+        
+        <style>
+            html,
+        body {
+            position: relative;
+            
+          }
+    
+          body {
+            /* background: #eee; */
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+          }
+    
+          .swiper {
+            width: 100%;
+            height: 100%;
+          }
+    
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background-color: #fff;
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+    
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        </style>
+      </head>
+    
+      <body>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="one">1</div>
+              <div class="cleanser-about">The Cleanser</div>
+              <p class="c">A facial cleanser is a skincare product used to remove make-up, dead skin cells, oil, dirt, and other types of pollutants from the skin, helping to keep pores clear and prevent skin conditions such as acne. Most of the environmental impurities and cosmetic products our skin comes in contact with are not water soluble, so washing the skin with water isn’t enough to remove them. Skin cleansers remove dirt, sebum, oil and dead skin cells—ideally without damaging or irritating the skin. Remember, it’s important to cleanse your skin every night, but also in the morning too, to remove any toxins your skin eliminates during the night.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="two">2</div>
+              <div class="exfoliator-about">The Exfoliator</div>
+              <p class="e">Exfoliation a skin-care technique where you remove dead cells from the top layer of your skin. By removing this layer of clutter off of your skin, exfoliation helps brighten your complexion, and lets your skin-care products penetrate deeper into your skin (making them work better.) As a general rule, less is more. The goal is NOT to turn beet red or to feel a sting—it’s to gently help along your body’s natural exfoliation process so that your face glows.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="three">3</div>
+              <div class="toner-about">The Toner</div>
+              <p class="t">Facial toner is basically the in-between skincare step. It's meant to be used after washing your face but before using your serum or moisturizer. Face toners prep the skin for moisturizers and serum while getting rid of excess excess oil and stubborn dirt or makeup leftover on your face after you wash it. But they're not a replacement for washing your face. Just think of facial toners as the extra credit rather than the shortcut of your skin-care routine.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="four">4</div>
+              <div class="sunscreen-about">The Sunscreen</div>
+              <p class="s">Wearing sunscreen is one of the best — and easiest — ways to protect your skin’s appearance and health at any age. Used regularly, sunscreen helps prevent sunburn, skin cancer and premature aging. For day-to-day use, pick a sunscreen with sun protection factor (SPF) of at least 30. If you spend time outdoors, choose a product with SPF 60 or greater. In reality, most people do not use as much sunscreen as they should, and this higher SPF helps compensate.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="five">5</div>
+              <div class="eyecream-about">The EyeCream</div>
+              <p class="ec">Like moisturizers you use on your face, eye creams include skin-restoring and replenishing benefit ingredients to help hydrate, reduce the appearance of puffiness and dark circles and defend against UV rays and other environmental aggressors. Many also contain anti-aging ingredients to diminish crow’s feet, fine lines and wrinkles. Most products are formulated with a combination of ingredients—so it’s best to choose an eye-cream based on your specific skin concern.</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="six">6</div>
+              <div class="moisturiser-about">The Moisturiser</div>
+              <p class="m">Moisturizers prevent and treat dry skin. They can also protect sensitive skin, improve skin texture and mask imperfections. You may need to try various products to find the right moisturizers for you. On the most basic level, moisturizers hold water in the outer layer of skin. Most moisturizers are water-based lotions, creams, gels and serums</p>
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+    </div> 
+
+    <div class="section s5">
+        <div class="s5-title">
+          <h1>The Products</h1></div>
+        <div class="column">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/toner-image.png" alt="toner-image" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Toner</h1>
+                    <p>Face toners prep the skin for moisturizers and serum while getting rid of excess excess oil and stubborn dirt or makeup leftover on your face after you wash it.</p>
+                    <p>The best toner ingredients for oily skin are salicylic acid, witch hazel, and alpha-hydroxy acids (AHAs).
+                      For dry skin, opt for toners with glycerin or hyaluronic acid, since they can provide hydration</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/scrub-image.png" alt="scrub-image" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Scrub</h1>
+                    <p>Exfoliation helps brighten your complexion, and lets your skin-care products penetrate deeper into your skin, making them work bettwe. </p>
+                    <p>There is both physical and chemical exfoliating, the ingredients for both are always good to to keep an eye out for the best.
+                      Physical exfoliating products are those containing small particles, like coffee, jojoba beads, or sugar granules
+                      Other face exfoliators are classified as chemical exfoliants which are broken down into categories including AHAs (alpha hydroxy acids), BHAs (beta hydroxy acids) and fruit enzymes.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/cleanser-image.png" alt="cleanser-image" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Cleanser</h1>
+                    <p>A facial cleanser is a skincare product used to remove make-up, dead skin cells, oil, dirt, and other types of pollutants from the skin, helping to keep pores clear and prevent skin conditions</p>
+                    <p>Some of the best ingredients in facial cleansers include retinol, salicylic acid, ceramides, vitamin C, glycerin, and chemical and physical exfoliants. For acne-prone or oily skin, look for a cleanser with retinol or salicylic acid. For dry or sensitive skin, choose a cleanser with glycerin or ceramides.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/moist-image.png" alt="moist-skin" style="width:300px;height:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Moisturiser</h1>
+                    <p>Moisturizers prevent and treat dry skin. They can also protect sensitive skin, improve skin texture and mask imperfections.</p>
+                    <p>One of the most effective moisturizing ingredients is glycerin, which keeps the skin hydrated by drawing moisture from the air into the top layer of skin. Shea butter is another great ingredient and works best when combined with another ingredient like glycerin.</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+    </div>  
+
+    <div class="section s6">
+        <div class="s6-title">
+          <h1>Skincare Tutorial</h1></div>
+          <iframe width="660" height="415" src="https://www.youtube.com/embed/vpB0u6zze-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+
+    <div>
+        <footer class="footer"></footer>
+        <sl-button type="primary" pill class="signup-btn">
+          <sl-icon name="person-plus-fill" slot="suffix"></sl-icon>
+          Sign Up
+        </sl-button>
+
+        <sl-dialog label="Sign Up" class="signup-dialog">
+          Sign up form
+        </sl-dialog>
+
+<sl-rating class="rating">Review</sl-rating>
+
+<sl-icon-button class="facebook" style="font-size: 2rem;" href="https://facebook.com" name="facebook" label="Facebook"></sl-icon-button>
+<sl-icon-button class="instagram" style="font-size: 2rem;" href="https://instagram.com" name="instagram" label="Instagram"></sl-icon-button>
+
+    
+</div>
+
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
